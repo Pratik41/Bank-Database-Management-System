@@ -243,7 +243,7 @@ delete_btn.grid(row=1,column=2,padx=5,pady=5)
 view_btn = ttk.Button(win,text="VIEW",command=view)
 view_btn.grid(row=1,column=3,padx=5,pady=5)
 
-update_btn = ttk.Button(win,text="UPADTE",command=update)
+update_btn = ttk.Button(win,text="UPDATE",command=update)
 update_btn.grid(row=4,column=5,padx=5,pady=5)
 
 
