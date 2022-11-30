@@ -5,21 +5,13 @@
 
 - **InventoryManagementService**
  
-  - This is a Spring Boot Service implemented with runtime as Java 1.8. 
-  - Basic functionalities of this app includes CRUD operations of Server, Device, Browser, Client and other Devices. 
-  - Spring Boot Security has been enabled, for Authentication and Authorization JWT token with role based access has been implemented. 
-  - It has emailing mechanism implemented with which clients can be able to see the reports generated. 
-  - Application uses Mongodb as primary database to store, read and write different documents.
-  - This link contains contract of each API’s:-[Contract of API’s](http://34.197.100.75:32174/swagger-ui.html)
+    This is a Spring Boot Service implemented with runtime as Java 1.8. Basic functionalities of this app includes CRUD operations of Server, Device, Browser, Client and other Devices. Spring Boot Security has been enabled, for Authentication and Authorization JWT token with role based access has been implemented. It has emailing mechanism implemented with which clients can be able to see the reports generated. Application uses Mongodb as primary database to store, read and write different documents.
+   
+   - This link contains contract of each API’s:-[Contract of API’s](http://34.197.100.75:32174/swagger-ui.html)
 
 - **InventoryManagementUI**
 
-  - A frontend application implemented in Angular and typescript.
-  - It has multiple screens namely Server, Device, Browser, Client and other Devices for all CRUD related activities. 
-  - Dashboard screen which generates an analytical sense of recorded data. 
-  - A Metaverse page to show all the nodes and relations of different entities (work in progress).
-  - All the operations are enriched with suggestion where user has less overhead in deciding and typing the things. 
-  - All the actions are based on the roles of the user logged in.
+   A frontend application implemented in Angular and typescript. It has multiple screens namely **Server**, **Device**, **Browser**, **Client** and **Other Devices** for all CRUD related activities. Dashboard screen which generates an analytical sense of recorded data. A **Metaverse** page to show all the nodes and relations of different entities (work in progress). All the operations are enriched with suggestion where user has less overhead in deciding and typing the things. All the actions are based on the roles of the user logged in.
 ## Prerequisties
 
 - Java 1.8
@@ -58,7 +50,7 @@
     ```bash
     ng serve
     ```
-### NOTE :- Property files of spring boot, environment file of Angular app needs to be updated with required credentials.
+**NOTE** : Property files of spring boot, environment file of Angular app needs to be updated with required credentials.
 
 
 ## Deployment Procedure
@@ -131,4 +123,5 @@
     | GET   | /inventory/v1/getAllOtherDevices        | To get all the OtherDevices related details.                                                                                                                            |
     | GET   | /inventory/v1/getOtherDevices /{oDeviceId}  | To get the OtherDevices related details based on `oDeviceId`.                                                                                                                                                                                                                            |
     | DELETE   | /inventory/v1/deleteOtherDevices/{oDeviceId}  | To delete the OtherDevices related details based on `oDeviceId`.                                                                                                                                                                                                                            |
-### NOTE :- ROLE_ADMIN can only delete the Server,Browser,Client,Devices & Others.
+    
+  **NOTE** : ROLE_ADMIN can only delete the Server,Browser,Client,Devices & Others.    
